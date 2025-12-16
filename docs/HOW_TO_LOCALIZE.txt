@@ -1,0 +1,10 @@
+IF GAME DOESN'T HAVE THIS, HOW TO IMPLEMENT IN OUR PROJECT?
+Based on impactjs-marketjs-platform repository as source:
+
+replace media files 1-1 (check promo artwork,splash,etc)
+strings.js
+check splash-loader.js
+create push-LANG-fresh.sh, push-LANG.sh
+create backup of current language in _factory/backup
+
+Finally... add game language in MarketJS platform (metadata)

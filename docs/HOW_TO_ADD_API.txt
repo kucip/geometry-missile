@@ -1,0 +1,10 @@
+IF GAME DOESN'T HAVE THIS, HOW TO IMPLEMENT IN OUR PROJECT?
+Based on impactjs-marketjs-platform repository as source:
+
+dev.html, insert <!-- APICode -->
+dev.js
+production.js
+DO NOT INSERT API CODE INTO main.js, because it'll get scrambled and mistakes happen
+Insert into other parts of the game (eg: brain.js)
+
+When in doubt, use Emoji Quiz as sample

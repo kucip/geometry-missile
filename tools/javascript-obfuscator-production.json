@@ -1,0 +1,19 @@
+{
+   "domainLock":[
+      "cdn-factory.marketjs.com"
+   ],
+   "compact":true,
+   "controlFlowFlattening":false,
+   "deadCodeInjection":false,
+   "debugProtection":false,
+   "disableConsoleOutput":true,
+   "identifierNamesGenerator":"hexadecimal",
+   "log":false,
+   "renameGlobals":false,
+   "rotateStringArray":true,
+   "selfDefending":false,
+   "shuffleStringArray":true,
+   "splitStrings":false,
+   "stringArray":false,
+   "unicodeEscapeSequence":false
+}

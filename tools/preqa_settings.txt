@@ -1,0 +1,2 @@
+.git,docs,glue,.vscode,node_modules,glue,config,lib,tools
+md,aif,tiff,au,psd,xcf,sh,py,pyc,php,bat,git,gitignore,gitkeep,tm_properties,txt,jar,DS_Store

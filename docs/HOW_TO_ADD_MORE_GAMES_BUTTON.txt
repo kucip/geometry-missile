@@ -1,0 +1,20 @@
+make sure artwork for "More Games" is there
+copy to appropriate folder
+dev.js, production
+	'MoreGames':{
+		'Enabled':true,
+		'Link':'http://yahoo.com',
+	},
+	
+copy button-more-games from template
+add button-more-games.js, definie width,height, and size! (x,y)
+
+main.js -> define link to button-more-games
+
+in director.js, remember to hide dynamic layer upon loadLevel
+
+	// MORE GAMES
+	'game.entities.button-more-games',
+
+use weltmeister to add "more games" button
+REMEMBER TO USE DIV_LAYER_NAME as entity settings in weltmeister

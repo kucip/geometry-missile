@@ -1,0 +1,34 @@
+copy paste, replace
+
+// MOBILE PATH: orientationHandler -> sizeHandler -> adjustLayers
+function orientationHandler(){
+	console.log('changing orientation ...');
+	
+	if(ig.ua.mobile){
+		if(window.innerHeight < window.innerWidth){
+			//var orientation = false ;	//landscape
+			$('#orientate').show();
+			$('#game').hide();
+			//alert(window.innerHeight +"/"+ window.innerWidth + "hide");
+		}else{
+			//var orientation = true ;	//portrait
+			$('#orientate').hide();
+			$('#game').show();
+			//alert(window.innerHeight +"/"+ window.innerWidth + "show");
+		}		
+	}
+
+	sizeHandler();
+}
+
+// EVENT LISTENERS
+window.addEventListener('resize', function (evt) {
+	orientationHandler();
+}, false);
+window.addEventListener('orientationchange', function (evt) {
+	orientationHandler();
+}, false);
+
+document.ontouchmove = function(e){ 
+    window.scrollTo(0, 1);
+}

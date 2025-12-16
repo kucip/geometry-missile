@@ -1,0 +1,29 @@
+IF GAME DOESN'T HAVE THIS, HOW TO IMPLEMENT IN OUR PROJECT?
+Based on impactjs-marketjs-platform repository as source:
+
+how to integrate branding logo
+-main.js 
+  -- (remove finalize code, use latest from template)
+  -- startGame(): if branding enabled, do something (line 118)
+-handler.js (remove dynamic entity portion)
+-plugin-branding splash
+- copy branding folder
+
+-dev.js, production.js
+-director.js, in nextLevel() -> add the hide overlay part. Check if any surprises on director.js
+- weltmeister.html
+<script src="settings/dev.js" type="text/javascript" charset="utf-8"></script>
+
+- lib/entities/branding-logo.js
+- lib/entities/branding-logo-placeholder.js
+- main.js (create link to branding-logo, to plugins.branding.splash)
+
+- static sound in createjs (media folder audio/play/)
+- sound-manager -> static
+- injectMobileLink -> use 'static'
+- opening.js -> init() or some other function must have sound for mobile`
+
+- <!-- adtest code -->
+- push-production.sh code -> custom.html
+
+- open weltmeister, add the branding entity position in someplace strategic ( clear path)

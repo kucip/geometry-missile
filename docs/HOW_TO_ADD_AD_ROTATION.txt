@@ -1,0 +1,10 @@
+IF GAME DOESN'T HAVE THIS, HOW TO IMPLEMENT IN OUR PROJECT?
+Based on impactjs-marketjs-platform repository as source:
+
+dev.html must have latest code (Ad rotation DIVs)
+dev.js must have ad rotation script
+copy paste entire settings folder (contains JS,CSS,etc)
+
+handler.js 
+- must have all the DIVs in advancedDivsToResize
+- try/catch in "for(key in advancedDivsToResize){" loop

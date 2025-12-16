@@ -1,0 +1,29 @@
+in handler.js, add
+
+function fixSamsungHandler(){// fix Samsung stock browser touch problem , for android 4.2 or above
+	if(!ig.ua.android)return ;	//if isnt android return
+	if(parseFloat(navigator.userAgent.slice(navigator.userAgent.indexOf("Android")+8,navigator.userAgent.indexOf("Android")+11)) < 4.2)return ; //if android under 4.2 return 
+	if(navigator.userAgent.indexOf("GT") < 0)return ; //if isnt samsung return
+	if(navigator.userAgent.indexOf("Chrome") > 0)return ; // if using chrome return
+	if(navigator.userAgent.indexOf("Firefox") > 0)return ;	// if using firefox return 
+	
+	document.addEventListener("touchstart", function(evt) {
+		evt.preventDefault();
+		return false ;
+	},false);
+	document.addEventListener("touchmove", function(evt) {
+		evt.preventDefault();
+		return false ;
+	},false);
+	document.addEventListener("touchend", function(evt) {
+		evt.preventDefault();
+		return false ;
+	},false);
+}
+
+in main.js, add
+
+	// Samsung fix
+	fixSamsungHandler();
+
+before this.END_OBFUSCATION;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geometry Missile</title>
+    <link rel="icon" type="image/png" href="media/graphics/promo/icons/96x96.png" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no, minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script type="text/javascript" src="game.js"></script>
+
+<!-- AnalyticsCode -->
+
+<!-- APICode -->
+</head>
+
+<!-- Level Editor (uncomment to enable) -->
+<!-- <div id="shape-dropmenu" style="display:none;position:fixed;top:10px;right:10px;z-index:9999;">
+    <div id="shape-dropmenu-toggle" style="background:#222;color:#fff;padding:10px 20px;border-radius:8px;cursor:pointer;font-size:16px;user-select:none;">
+    <b>Obstacle Shapes ▼</b>
+  </div>
+    <ul id="shape-list-ul" style="display:none;background:#222;color:#fff;padding:10px 20px 10px 30px;border-radius:0 0 8px 8px;margin:0;max-width:220px;font-size:16px;list-style:none;box-shadow:0 4px 12px #0008;"></ul>
+</div>
+<div id="export-level" style="display:none;position:fixed;top:60px;right:10px;z-index:9999;">
+    <button id="export-level-btn" style="position:fixed;top:15px;right:260px;z-index:10000;">Export Level</button>
+    <textarea id="export-level-output" style="display:none;position:fixed;top:100px;right:10px;width:400px;height:400px;z-index:10000;"></textarea>
+</div> -->
+<!-- End Level Editor -->
+ 
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
+    <!--body-->
+        <div id="ajaxbar">
+            <div id="game"><canvas id="canvas"></canvas></div>
+    
+            <div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
+            <div id="play" class="play" onclick=""></div>
+            <!--<img id="scrollDown" width="220" height="277"></img>-->
+    
+    
+        </div>
+        <!-- <div id="tempdiv"><br><br><br></div> -->
+    <!-- APICode2 -->
+    
+    
+    <!-- END OF TEST -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggle = document.getElementById('shape-dropmenu-toggle');
+            var ul = document.getElementById('shape-list-ul');
+            if (toggle && ul) {
+                toggle.onclick = function () {
+                    ul.style.display = (ul.style.display === 'block') ? 'none' : 'block';
+                };
+                document.addEventListener('mousedown', function (e) {
+                    if (!toggle.contains(e.target) && !ul.contains(e.target)) {
+                        ul.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

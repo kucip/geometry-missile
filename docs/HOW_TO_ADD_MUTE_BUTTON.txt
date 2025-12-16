@@ -1,0 +1,10 @@
+Follow pop star dentist
+
+Build sound button based on PopStarDentist
+
+Add ig.game.soundEnabled
+Use stopBackgroudMusic
+use createJS for non android only
+
+Compromise:
+Android will not have multichannel

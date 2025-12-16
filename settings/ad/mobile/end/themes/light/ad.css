@@ -1,0 +1,60 @@
+#MobileAdInGameEnd, #MobileAdInGameEnd2, #MobileAdInGameEnd3 {
+    position:absolute;
+    float:left;
+    min-width: 320px;
+    z-index:10000;
+    left:0;
+    top:0;
+    display:none;
+    background:rgba(0,0,0,0.7);
+    -webkit-transition: all 0.6s ease;
+      -moz-transition:    all 0.6s ease;
+      -o-transition:      all 0.6s ease;
+}
+
+#MobileAdInGameEnd-Box, #MobileAdInGameEnd2-Box, #MobileAdInGameEnd3-Box {
+    z-index:10000;
+    position:absolute;
+    width: 302px;
+    height: 250px;
+}
+
+#MobileAdInGameEnd-Box-Body, #MobileAdInGameEnd2-Box-Body, #MobileAdInGameEnd3-Box-Body {
+    z-index:10000;
+    position:relative;
+    background:transparent;
+}
+
+#MobileAdInGameEnd-Box-Footer, #MobileAdInGameEnd2-Box-Footer, #MobileAdInGameEnd3-Box-Footer {
+    z-index:10000;
+    position:relative;
+    font-size:11px;
+    height: 20px;
+    color:#fff;
+    background:transparent;
+    /*border:1px solid #ccc;*/
+}
+
+#MobileAdInGameEnd-Box-Header, #MobileAdInGameEnd2-Box-Header, #MobileAdInGameEnd3-Box-Header {
+    z-index:10000;
+    position:relative;
+    margin-top:-2px;
+    font-size:11px;
+    height: 20px;
+    text-align:right;
+    color:#fff;
+    background:transparent;
+}
+
+#MobileAdInGameEnd-Box-Close, #MobileAdInGameEnd2-Box-Close, #MobileAdInGameEnd3-Box-Close {
+    position:absolute;
+    z-index:10005;
+    background-image:url('../../../../../../media/graphics/generic-ad/light/close-button.png'); /* NEED TO RENAME */
+    background-repeat:no-repeat;
+    /*border:1px solid #ccc;*/
+    width:22px;
+    height:22px;
+       top:-4px;
+    margin-right:-1px;
+    display:none;
+}

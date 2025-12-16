@@ -1,0 +1,4 @@
+handler.js, at the very bottom:
+
+// ON FOCUS (FIX SPLASH FREEZE ANDROID)
+window.onfocus = function() { if(ig.ua.mobile){ig.game.resumeGame();} }
